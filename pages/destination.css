@@ -1,0 +1,383 @@
+@font-face {
+    font-family: MyFont1;
+    src: url('../assets/fonts/Barlow-Regular.ttf');
+}
+
+@font-face {
+    font-family: MyFont2;
+    src: url('../assets/fonts/Bellefair-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.destination-main {
+    width: 100%;
+    height: 110vh;
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+header img {
+    position: absolute;
+    top: 55px;
+    left: 55px;
+}
+
+.line {
+    width: 40%;
+    height: 2px;
+    background: hsla(0, 2%, 43%, 0.629);
+    position: absolute;
+    top: 78px;
+    left: 150px;
+    z-index: 1;
+}
+
+.menu {
+    width: 53%;
+    height: 95px;
+    background: hsla(230, 7%, 49%, 0.214);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 0;
+    font-family: MyFont1;
+    border-radius: 2px;
+}
+
+.menu ul {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    line-height: 90px;
+}
+
+.menu ul li a {
+    letter-spacing: 1px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li:nth-child(2) {
+    border-bottom: 3px solid white;
+}
+
+.menu ul li:nth-child(1):hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.405);
+}
+
+.menu ul li:nth-child(3):hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.405);
+}
+
+.menu ul li:nth-child(4):hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.405);
+}
+
+.menu ul li a span {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 130px;
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+
+.destination {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination-image h1 {
+    text-align: left;
+    font-family: MyFont1;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+
+
+.destination-image img {
+    background: transparent;
+    animation: rotate 80s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.destination-image h1 span {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgba(128, 128, 128, 0.416);
+    font-family: MyFont1;
+    margin-right: 5px;
+}
+
+.destination-data {
+    margin-left: 150px;
+}
+
+.destination-btns {
+    margin-bottom: 50px;
+    display: flex;
+    height: 40px;
+}
+
+.destination-btns div {
+    text-decoration: none;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    color: hsl(231 77% 90%);
+    font-family: MyFont1;
+    font-size: 24px;
+    font-weight: 200;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.destination-btns div:hover {
+    border-bottom: 2px solid white;
+}
+
+.destination-description {
+    padding-bottom: 30px;
+    border-bottom: 2px rgba(128, 128, 128, 0.314) solid;
+    margin-bottom: 30px;
+}
+
+.destination-description h1 {
+    font-family: MyFont2;
+    font-size: 110px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.destination-description p {
+    color: hsl(231 77% 90%);
+    font-size: 20px;
+    line-height: 30px;
+    font-family: MyFont1;
+}
+
+.destination-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.destination-info h2 {
+    font-family: MyFont1;
+    color: hsl(231 77% 90%);
+    margin-bottom: 5px;
+}
+
+.destination-info h1 {
+    font-family: MyFont2;
+    color: hsl(231, 64%, 98%);
+}
+
+.destination-info div {
+    margin-right: 50px;
+}
+
+
+@media screen and (max-width: 1080px) {
+
+    .header {
+        height: 15%;
+        justify-content: center;
+    }
+
+    .line {
+        display: none;
+    }
+
+
+    .menu {
+        width: 70%;
+    }
+
+
+    .menu ul li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .destination-main {
+        height: 150vh;
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        /* initially hidden */
+        width: 250px;
+        height: 100%;
+        background: hsla(230, 7%, 49%, 0.214);
+        backdrop-filter: blur(18px);
+        transition: right 0.3s ease;
+        /* transition effect when sliding in/out */
+        z-index: 1;
+    }
+
+
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        position: relative;
+    }
+
+    .open {
+        top: 0px;
+        right: 0;
+        width: 80%;
+        height: 100%;
+    }
+
+    .close {
+        display: flex;
+        position: absolute;
+        top: -220px;
+        right: 50px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .destination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .destination-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .destination-data {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 35px;
+    }
+
+    .destination-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .destination-info {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .destination-info div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .destination-main {
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
+
+    .destination-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .destination-image h1 {
+        font-size: 20px;
+    }
+
+    .destination-btns div {
+        font-size: 20px;
+    }
+
+    .destination-description h1 {
+        font-size: 80px;
+    }
+
+    .destination-info h2 {
+        font-size: 20px;
+    }
+
+    .destination-info h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="technology.css">
+</head>
+
+<body>
+
+    <div class="technology-main">
+        <header>
+            <div class="logo">
+                <img src="../assets/shared/logo.svg" alt="">
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../pages/home.html"><span>00</span> HOME</a></li>
+                    <li><a href="../pages/destination.html"><span>01</span> DESTINATION</a></li>
+                    <li><a href="../pages/crew.html"><span>02</span> CREW</a></li>
+                    <li><a href="#"><span>03</span> TECHNOLOGY</a></li>
+                    <div class="close" id="close">
+                        <img src="../assets/shared/icon-close.svg" alt="">
+                    </div>
+                </ul>
+               
+            </div>
+            <div class="hamburger" id="hamburger">
+                <img src="../assets/shared/icon-hamburger.svg" alt="">
+            </div>
+        </header>
+
+        <div class="technology">
+            <div class="technology-details">
+                <div class="technology-info">
+                    <h1><span>03</span>SPACE LAUNCH 101</h1>
+                </div>
+                <div class="facilities-desc">
+                    <div class="launch-facilities">
+                        <div class="launch" id="launch1" onclick="showFacility('Launch Vehicle') ,handleLaunchClick('launch1')">1</div>
+                        <div class="launch" id="launch2" onclick="showFacility('Spaceport'), handleLaunchClick('launch2')">2</div>
+                        <div class="launch" id="launch3" onclick="showFacility('Space capsule'), handleLaunchClick('launch3')">3</div>
+                    </div>
+                    <div class="technology-description">
+                        <h3>THE TERMINOLOGY...</h3>
+                        <h1 id="facility-name">LAUNCH VEHICLES</h1>
+                        <p id="facility-description">
+                            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from
+                            Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                            powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch
+                            pad.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="technology-image">
+               <img src="../assets/technology/image-launch-vehicle-portrait.jpg" alt="" id="facility-image">
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="technology.js"></script>
+</body>
+
+</html>
