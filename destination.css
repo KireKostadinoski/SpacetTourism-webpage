@@ -1,11 +1,11 @@
 @font-face {
     font-family: MyFont1;
-    src: url('../assets/fonts/Barlow-Regular.ttf');
+    src: url('./assets/fonts/Barlow-Regular.ttf');
 }
 
 @font-face {
     font-family: MyFont2;
-    src: url('../assets/fonts/Bellefair-Regular.ttf');
+    src: url('./assets/fonts/Bellefair-Regular.ttf');
 }
 
 * {
@@ -18,7 +18,7 @@
 .destination-main {
     width: 100%;
     height: 110vh;
-    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -262,7 +262,7 @@ header img {
 
     .destination-main {
         height: 160vh;
-        background-image: url('../assets/destination/background-destination-tablet.jpg');
+        background-image: url('./assets/destination/background-destination-tablet.jpg');
     }
 
 
@@ -353,7 +353,7 @@ header img {
 @media screen and (max-width: 500px) {
 
     .destination-main {
-        background-image: url('../assets/destination/background-destination-mobile.jpg');
+        background-image: url('./assets/destination/background-destination-mobile.jpg');
     }
 
     .destination-image img {
