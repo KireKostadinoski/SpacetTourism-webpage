@@ -37,23 +37,21 @@ function handleLaunchClick(launchId) {
   }
 
 
-  // Function to open the menu with slide-in effect
-function openMenu() {
-   let hamburger = document.getElementById('hamburger');
-   let menu = document.querySelector(".menu");
+  function openMenu() {
+    let hamburger = document.getElementById('hamburger');
+    let menu = document.querySelector(".menu");
     menu.classList.add("open");
     hamburger.style.display = 'none';
 }
 
-// Function to close the menu
 function closeMenu() {
-   let menu = document.querySelector(".menu");
+    let menu = document.querySelector(".menu");
     menu.classList.remove("open");
     hamburger.style.display = 'block';
 }
 
 document.getElementById("hamburger").addEventListener("click", function() {
-   let menu = document.querySelector(".menu");
+    let menu = document.querySelector(".menu");
     if (!menu.classList.contains("open")) {
         openMenu();
     } else {

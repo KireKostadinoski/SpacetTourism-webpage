@@ -232,7 +232,7 @@ header img{
 @media screen and (max-width: 940px) {
 
     .technology-main {
-        height: 160vh;
+        height: 180vh;
         background-image: url('../assets/technology/background-technology-tablet.jpg');
     }
 
@@ -257,21 +257,21 @@ header img{
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        margin: 0;
+        margin: 0 auto;
         position: relative;
     }
 
     .open {
         top: 0px;
         right: 0;
-        width: 80%;
+        width: 100%;
         height: 100%;
     }
 
     .close {
         display: flex;
         position: absolute;
-        top: -220px;
+        top: -170px;
         right: 50px;
     }
 

@@ -21,7 +21,6 @@ function showDestination(destinationName) {
 }
 
 
-
 function openMenu() {
     let hamburger = document.getElementById('hamburger');
     let menu = document.querySelector(".menu");
@@ -47,4 +46,6 @@ document.getElementById("hamburger").addEventListener("click", function() {
 document.getElementById("close").addEventListener("click", function() {
     closeMenu();
 });
+
+
 

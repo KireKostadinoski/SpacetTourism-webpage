@@ -42,7 +42,6 @@ function handleDotClick(event) {
 }
 
 
-// Function to open the menu with slide-in effect
 function openMenu() {
     let hamburger = document.getElementById('hamburger');
     let menu = document.querySelector(".menu");
@@ -64,7 +63,6 @@ document.getElementById("hamburger").addEventListener("click", function() {
         closeMenu();
     }
 });
-
 
 document.getElementById("close").addEventListener("click", function() {
     closeMenu();
