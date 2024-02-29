@@ -305,6 +305,7 @@ header img {
 
     .home-main {
         height: 145vh;
+        width: 100%;
         background-image: url('./assets/home/background-home-mobile.jpg');
     }
     
@@ -314,7 +315,7 @@ header img {
 
 
     .space{
-        font-size: 125px;
+        font-size: 90px;
     }
 
     .explore-btn{
