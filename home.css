@@ -301,7 +301,7 @@ header img {
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 370px) {
 
     .home-main {
         height: 145vh;
