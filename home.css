@@ -251,7 +251,7 @@ header img {
         display: flex;
         position: absolute;
         top: -170px;
-        right: 50px;
+        right: 90px;
     }
 
     .hamburger {
@@ -290,7 +290,7 @@ header img {
 
 
     .space{
-        font-size: 125px;
+        font-size: 90px;
     }
 
     .explore-btn{

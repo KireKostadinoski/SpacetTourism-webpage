@@ -272,7 +272,7 @@ header img{
         display: flex;
         position: absolute;
         top: -170px;
-        right: 50px;
+        right: 90px;
     }
 
     .hamburger {
@@ -349,14 +349,14 @@ header img{
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        margin: 0;
+        margin: 0 auto;
         position: relative;
     }
 
     .open {
         top: 0px;
         right: 0;
-        width: 80%;
+        width: 100%;
         height: 100%;
     }
 
@@ -364,7 +364,7 @@ header img{
         display: flex;
         position: absolute;
         top: -220px;
-        right: 50px;
+        right: 90px;
     }
 
     .hamburger {
