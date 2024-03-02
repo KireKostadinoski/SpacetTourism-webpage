@@ -324,7 +324,7 @@ header img{
 @media screen and (max-width: 500px) {
 
     .technology-main {
-        height: 140vh;
+        height: 150vh;
         background-image: url('./assets/technology/background-technology-mobile.jpg');
     }
 
