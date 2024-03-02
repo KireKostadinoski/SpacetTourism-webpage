@@ -222,7 +222,7 @@ header img{
 @media screen and (max-width: 940px) {
 
     .crew-main {
-        height: 160vh;
+        height: 170vh;
         background-image: url('./assets/crew/background-crew-tablet.jpg');
     }
 
@@ -306,6 +306,10 @@ header img{
     .crew-image img {
         height: 60vh;
         width: 90%;
+    }
+
+    .logo{
+        display: none;
     }
 
     .commander{

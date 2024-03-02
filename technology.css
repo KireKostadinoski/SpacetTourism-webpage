@@ -324,7 +324,7 @@ header img{
 @media screen and (max-width: 500px) {
 
     .technology-main {
-        height: 150vh;
+        height: 170vh;
         background-image: url('./assets/technology/background-technology-mobile.jpg');
     }
 
@@ -353,6 +353,10 @@ header img{
         position: relative;
     }
 
+    .logo{
+        display: none;
+    }
+
     .open {
         top: 0px;
         right: 0;
@@ -363,7 +367,7 @@ header img{
     .close {
         display: flex;
         position: absolute;
-        top: -220px;
+        top: -180px;
         right: 90px;
     }
 

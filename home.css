@@ -288,6 +288,10 @@ header img {
        margin-bottom: 25px;
     }
 
+    .logo{
+        display: none;
+    }
+
 
     .space{
         font-size: 90px;
