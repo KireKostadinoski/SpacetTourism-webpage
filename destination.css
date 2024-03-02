@@ -353,6 +353,7 @@ header img {
 @media screen and (max-width: 500px) {
 
     .destination-main {
+        height: 195vh;
         background-image: url('./assets/destination/background-destination-mobile.jpg');
     }
 
